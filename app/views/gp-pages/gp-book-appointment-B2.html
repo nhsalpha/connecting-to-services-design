@@ -1,0 +1,58 @@
+{% extends 'templates/nhs_transaction_layout.html' %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+
+  <div class="module">
+
+
+
+
+<table class="appointments">
+  <tr class="app-head">
+    <h2>Wednesday 15th June, 5 appointments available</h2>
+      Choose an appointment time with an available doctor
+    </tr>
+     <tr class="t-head">
+    <td class="left50">Time</td>
+    <td class="right40">Doctor</td>
+    <td class="right10"></td>
+  </tr>
+  <tr class="app-odd">
+    <td class="left50">09:30</td>
+    <td class="right40">Dr Nigel Bew</td>
+    <td class="right10"><a href="https://systmonline.tpp-uk.com/" class="button select">Book</a></td>
+  </tr>
+  <tr>
+    <td class="left50">10:30</td>
+    <td class="right40">Dr Jo Sheehan</td>
+    <td class="right10"><a href="https://systmonline.tpp-uk.com/" class="button select">Book</a></td>
+  </tr>
+    
+  <tr  class="app-odd">
+    <td class="left50">14:50</td>
+    <td class="right40">Dr Guy Baker</td>
+    <td class="right10"><a href="https://systmonline.tpp-uk.com/" class="button select">Book</a></td>
+  </tr>
+    <tr>
+    <td class="left50">14:20</td>
+    <td class="right40">Dr Lesley Sunderland</td>
+    <td class="right10"><a href="https://systmonline.tpp-uk.com/" class="button select">Book</a></td>
+  </tr>
+      <tr  class="app-odd">
+    <td class="left50">16:10</td>
+    <td class="right40">Dr Jo Sheehan</td>
+    <td class="right10"><a href="https://systmonline.tpp-uk.com/" class="button select">Book</a></td>
+  </tr>
+</table>
+       <ul class="notice-grey" role="note" aria-label="Information">
+   <li>You'll need your SystmOnline username and password to sign in</li>
+
+  </ul>
+ 
+
+</main>
+
+{% endblock %}

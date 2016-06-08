@@ -1,0 +1,89 @@
+{% extends 'templates/nhs_transaction_layout.html' %}
+
+{% block content %}
+
+<main id="content" role="main">
+<div class="module">
+<h1 class="heading-xxlarge">Book a GP appointment at Street Lane Practice</h1>
+
+<p>12 Devonshire Avenue, Leeds, West Yorkshire, LS8 1AY</p> 
+
+
+<a class="link" href="https://www.google.co.uk/maps/place/Devonshire+Ave,+Leeds,+West+Yorkshire+LS8+1AY/@53.8433464,-1.5154174,17z/data=!3m1!4b1!4m2!3m1!1s0x48795ba4c4865f53:0x88630d5f1ae46082" target="_blank">View on a map and get directions</a>
+
+
+<h2 class="phone">Call 0113 2371128</h2>
+
+</div>
+
+  <div class="module">
+<p>You can book an appointment online if you have registered an online account. Street Lane Practice uses a system called SystmOnline to do this.</p>
+      <p style="margin-top:10px;">If you don't have a SystmOnline username and password, you can read more about registering an account<a href="javascript:void(0);"> here</a></p>
+ 
+      <ul class="notice">
+<li>You can check for available appointments below before signing in to SystmOnline</li>
+</ul>
+     
+
+<table class="appointments">
+  <tr class="app-head">
+    Select a date to see the available appointments
+    </tr>
+     <tr class="t-head">
+    <td class="left50">Date</td>
+    <td class="right40">Availability</td>
+    <td class="right10"></td>
+  </tr>
+  <tr class="app-odd">
+    <td class="left50">Wed 15th Jun</td>
+    <td class="right40">5 available</td>
+    <td class="right10"><a href="gp-book-appointment-B2" class="button select">Select</a></td>
+  </tr>
+  <tr>
+    <td class="left50">Thu 16th Jun</td>
+    <td class="right40">2 available</td>
+    <td class="right10"><a href="gp-book-appointment-B3" class="button select">Select</a></td>
+  </tr>
+    
+  <tr  class="app-odd">
+    <td class="left50">Fri 17th Jun</td>
+    <td class="right40">3 available</td>
+    <td class="right10"><a href="gp-book-appointment-B4" class="button select">Select</a></td>
+  </tr>
+  
+</table>
+       <ul class="notice-grey" role="note" aria-label="Information">
+   <li>You'll need your SystmOnline username and password to sign in</li>
+
+  </ul>
+ <a href="javascript:void(0);" class="button">Book a GP Appointment</a>
+<p style="margin-top:10px;">You can normally book an appointment with any of the practice doctors</p>
+<ul>
+<li>Dr Jo Sheehan</li>
+<li>Dr Nigel Bew</li>
+<li>Dr Lesley Sunderland</li>
+<li>Dr Guy Baker</li>
+<li>Dr Jonny Hobman</li>
+<li>Dr Meena Khan</li>
+<li>Dr Joanna Hart</li>
+</ul>
+
+<a href="gp-services" >Book other services offered at the practice</a>
+</div>
+    <div class="module">
+<p>If you would like to find out more about your symptoms or condition you can search for information here</p>
+
+<div class="search-box"><form class="search">
+      <input type="text">
+      <button type="submit">Search</button>
+    </form></div>
+
+</div>
+    <div class="module">
+<ul class="notice">
+<li><input type="checkbox"> Remember Street Lane Practice as your local GP</li>
+
+</ul></div>
+</main>
+
+{% endblock %}

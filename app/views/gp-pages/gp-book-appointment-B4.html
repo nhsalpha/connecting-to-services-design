@@ -1,0 +1,48 @@
+{% extends 'templates/nhs_transaction_layout.html' %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+
+  <div class="module">
+
+
+
+
+<table class="appointments">
+  <tr class="app-head">
+    <h2>Friday 17th June, 3 appointments available</h2>
+      Choose an appointment time with an available doctor
+    </tr>
+     <tr class="t-head">
+    <td class="left50">Time</td>
+    <td class="right40">Doctor</td>
+    <td class="right10"></td>
+  </tr>
+  <tr class="app-odd">
+    <td class="left50">12:00</td>
+    <td class="right40">Meena Khan</td>
+    <td class="right10"><a href="https://systmonline.tpp-uk.com/" class="button select">Book</a></td>
+  </tr>
+  <tr>
+    <td class="left50">14:20</td>
+    <td class="right40">Dr Jonny Hobman</td>
+    <td class="right10"><a href="https://systmonline.tpp-uk.com/" class="button select">Book</a></td>
+  </tr>
+    <tr class="app-odd">
+    <td class="left50">16:45</td>
+    <td class="right40">Dr Joanna Hart</td>
+    <td class="right10"><a href="https://systmonline.tpp-uk.com/" class="button select">Book</a></td>
+  </tr>
+  
+</table>
+       <ul class="notice-grey" role="note" aria-label="Information">
+   <li>You'll need your SystmOnline username and password to sign in</li>
+
+  </ul>
+ 
+
+</main>
+
+{% endblock %}
