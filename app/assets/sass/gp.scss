@@ -1,11 +1,5 @@
-
 body {background:white;}
-/*h1, .heading-xxlarge     {
-    padding:20px 0;
-    font-weight: 400;
-    font-size: 64px;
-    line-height:58px;
-}*/
+
 .heading-xxlarge, .markdown-content h1 {
     font-size: 3.8rem;
     line-height:4.5rem;
@@ -17,46 +11,49 @@ h2.phone {
 	font-size:2.4rem;
 	color:#66B0E8;
 }
-/*hr {
-    background:none;
-    border:none;
-    border-bottom:solid 1px #333 ;
-    padding:5px 0;
-    margin-bottom: 20px;
-}*/
+
 .module {
     border-bottom: 1px solid #dcdcdc;
     width:100%;
     padding:20px 0 20px 0;
 }
 
+.notice-grey {
+	padding: 18px;
+    margin: 36px 0;
+	background: #eee;
+    border-left: 3px solid #999;
+    font-size:1.5rem;
+    line-height:20px;
+	max-width: 612px;
+}
 .notice-red {
 	padding: 18px;
     margin: 36px 0;
 	background: white;
     border-left: 3px solid #CC0104;
-    font-size:18px;
-    line-height:20px;
+    font-size:1.5rem;
+    line-height:2rem;
 	max-width: 612px;
 }
-
 .notice-red-line {
 	padding: 18px;
     margin: 36px 0px;
     background:#fffab3;
     border-left: 3px solid #CC0104;
-    font-size:16px;
-    line-height:18px;
+    font-size:1.5rem;
+    line-height:2rem;
     color:#CC0104;
 	max-width: 612px;
 }
 ul.notice {
 	padding: 18px;
+    padding-top:24px;
     margin: 36px 0px;
 	background: #fffab3;
     border-left: 3px solid #FCDF03;
-    font-size:16px;
-    line-height:18px;
+    font-size:1.5rem;
+    line-height:2rem;
     color:#333;
 	max-width: 612px;
 }
@@ -65,8 +62,8 @@ ul.notice-red-line {
     margin: 36px 0px;
 	background: #fffab3;
     border-left: 3px solid #CC0104;
-    font-size:16px;
-    line-height:18px;
+    font-size:1.5rem;
+    line-height:2rem;
     color:#333;
 	max-width: 612px;
 }
@@ -92,7 +89,7 @@ h2.subhead {
 	background: #b2e599;
     border-left: 3px solid #009933;
     font-size:18px;
-    line-height:20px;
+    line-height:2rem;
 	max-width: 612px;
 }
 .notice-green h2.subhead {
@@ -160,7 +157,6 @@ span {
 	color: orange;
 	cursor: pointer;
 }
-
 span:hover:before {
 	content: "\2605";
 	position: absolute;
@@ -273,6 +269,15 @@ table {
     color: #fff;
     background-color: #006647;
 }
+.button.select:link, .button.select:hover, .button.select:focus, .button.select:visited {
+    color: #fff;
+    background-color: #009e49;
+    margin:0;
+    padding:8px auto;
+    border:1px solid ;
+    height:auto;
+    
+}
 a:visited, .link:visited {
     color: #0072C6;
 }
@@ -300,5 +305,42 @@ a:link, .link {
     text-decoration: none !important;
 	margin-bottom:20px;
 }
+table.appointments {
+    margin-top:20px;
+    margin-bottom:50px;
+    width:100%;
+    max-width: 612px;
+}
+tr.app-head {
+    margin-top:30px;
+    padding:0 15px;
+}
+tr.t-head {
+    font-weight:700;
+    background-color:none ;
+    border-right:2px solid #fff;
+}
+tr.app-odd {
+        background-color: #f5f5f5;
+       
+    }
+th, td.left50  {
+    display: table-cell;
+    vertical-align:middle;
+    text-align:left;
+    width:40%;
+    padding: 10px;
+   
+}
+th, td.right40 {    
+    display: table-cell;
+    vertical-align: middle;
+    text-align:left;
+	width:40%;
+    padding: 10px;
+}
 
-
+th, td.right10  {    
+	width:20%;
+    text-align:center;
+}
