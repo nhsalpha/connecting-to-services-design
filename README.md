@@ -35,13 +35,22 @@ git clone https://github.com/nhsalpha/nhs_prototype_kit.git
 
 ```
 
+#### Swap to the app's directory
+
+Using the shell/terminal window:
+
+```
+cd gp-screens-prototype
+```
+
+
 #### Install dependencies
 
 ```
 npm install
 ```
 
-This will install folders containing programs described by the package.json file to a folder called `node_modules`.
+This will install folders containing programs described by the package.json file to a folder called `node_modules`. You mayb get some `deprecated` notices and `warning` several times. The app should install OK, returning the directory tree of the app if successul.
 
 #### Run the app
 
@@ -68,4 +77,3 @@ Find out how to work with the prototyping application.
 * [Deploying (getting your work online)](docs/deploying.md)
 
 This project is built on top of Express, the idea is that it is straightforward to create simple static pages out of the box. However, you're not limited to that - more dynamic sites can be built with more understanding of Express. Here's a good [Express tutorial.](http://code.tutsplus.com/tutorials/introduction-to-express--net-33367)
-
