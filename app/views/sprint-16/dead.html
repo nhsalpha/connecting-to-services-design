@@ -1,0 +1,29 @@
+{% extends 'templates/nhs_transaction_layout.html' %}
+
+{% block content %}
+
+{% block afterHeader %}
+  {% include "includes/service-headers/gp-overview.html" %}
+{% endblock %}
+
+
+<main id="content" role="main">
+
+  Test words
+
+    <h1 class="heading-xlarge">Windy Lane Practice</h1>
+
+    <div class="row">
+      <div class="column-two-thirds">
+        <p>101 Windy Lane, Ambridge, West Yorkshire, LS35 0XY</p>
+
+        <ul>
+            <li><a class="link" href="https://www.google.co.uk/maps/place/Devonshire+Ave,+Leeds,+West+Yorkshire+LS8+1AY/@53.8433464,-1.5154174,17z/data=!3m1!4b1!4m2!3m1!1s0x48795ba4c4865f53:0x88630d5f1ae46082" target="_blank">View on a map and get directions</a> (opens another window)</li>
+        </ul>
+        <h2 class="heading-medium">Call reception 0113 789456</h2>
+      </div>
+    </div>
+
+</main>
+
+{% endblock %}

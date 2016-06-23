@@ -71,3 +71,118 @@
   ul { @extend .list-bullet; }
   ol { @extend .list-number; }
 }
+
+
+//
+// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+//
+
+
+.notice-green {
+  padding: 18px;
+  margin: 36px 0;
+	background: $nhs-light-green;
+  border-left: 3px solid $nhs-green;
+  color: $white;
+  font-size:18px;
+  line-height:2rem;
+}
+
+
+.notice-red-line {
+	padding: 18px;
+  margin: 36px 0px;
+  background:#fffab3;
+  border-left: 3px solid #CC0104;
+  font-size:1.5rem;
+  line-height:2rem;
+  color:#CC0104;
+	max-width: 612px;
+}
+
+ul.notice {
+	padding: 18px;
+  padding-top:24px;
+  margin: 36px 0px;
+	background: #fffab3;
+  border-left: 3px solid #FCDF03;
+  font-size:1.5rem;
+  line-height:2rem;
+  color:#333;
+	max-width: 612px;
+}
+
+ul.notice-red-line {
+	padding: 18px;
+  margin: 36px 0px;
+	background: #fffab3;
+  border-left: 3px solid #CC0104;
+  font-size:1.5rem;
+  line-height:2rem;
+  color:#333;
+	max-width: 612px;
+}
+
+ul.alternatives {
+	padding-left: 18px;
+
+}
+
+.notice-green h2.subhead {
+	color:#009933;
+}
+
+.notice-red li {
+	 color:#333;
+	     margin-top: 15px;
+		 max-width: 612px;
+}
+
+.notice-green li {
+	 color:black;
+	 margin-top: 15px;
+	 max-width: 612px;
+}
+
+
+details summary:focus {
+    outline:none !important;
+}
+
+.callout.link-box {
+    padding-left: 18px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+// GP opening times table override style
+table.gpOpeningTimes {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+table.gpOpeningTimes th {
+    font-weight: 700;
+}
+
+table.gpOpeningTimes th {
+    padding: 1.5em 0.5em 0.75em 0;
+}
+
+table.gpOpeningTimes td {
+    padding: 0.75em 0.5em 0.75em 0;
+}
+
+table.gpOpeningTimes td,
+table.gpOpeningTimes th {
+    font-size: 1.5rem;
+    margin: 1em 0 2em;
+    text-align: left;
+    vertical-align: top;
+    text-align: left;
+}
+
+table.gpOpeningTimes tr {
+    border-bottom: solid 1px #bfc1c3;
+}
