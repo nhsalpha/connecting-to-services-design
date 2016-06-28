@@ -80,7 +80,7 @@
 
 .notice-green {
   padding: 18px;
-  margin: 36px 0;
+  margin: 0 0 18px 0;
 	background: $nhs-light-green;
   border-left: 3px solid $nhs-green;
   color: $white;
@@ -88,17 +88,62 @@
   line-height:2rem;
 }
 
-
-.notice-red-line {
-	padding: 18px;
-  margin: 36px 0px;
-  background:#fffab3;
-  border-left: 3px solid #CC0104;
-  font-size:1.5rem;
-  line-height:2rem;
-  color:#CC0104;
-	max-width: 612px;
+.notice-green p, .notice-green a, .notice-green h2, .notice-green h3 {
+  color: $black;
 }
+
+.notice-orange {
+  padding: 18px;
+  margin: 0 0 18px 0;
+	background: $nhs-orange;
+  border-left: 3px solid $nhs-red;
+  color: $black;
+  font-size:18px;
+  line-height:2rem;
+}
+
+.notice-blue {
+  padding: 18px;
+  margin: 0 0 18px 0;
+	background: $nhs-light-blue;
+  border-left: 3px solid $nhs-black;
+  color: $white;
+  font-size:18px;
+  line-height:2rem;
+}
+
+.notice-blue a {
+  color: $white;
+}
+
+.alert-blue {
+  margin: 20px 0;
+  padding: 18px;
+	background: $nhs-light-blue;
+  color: $white;
+  line-height:2rem;
+}
+
+.alert-blue p {
+  font-size: 20px;
+  margin: 0;
+
+}
+
+.alert-blue a {
+  color: $white;
+  font-weight: 400;
+}
+
+
+.alert-green {
+  margin: 20px 0;
+  padding: 18px;
+	background: $nhs-light-green;
+  color: $white;
+  line-height:2rem;
+}
+
 
 ul.notice {
 	padding: 18px;
@@ -106,17 +151,6 @@ ul.notice {
   margin: 36px 0px;
 	background: #fffab3;
   border-left: 3px solid #FCDF03;
-  font-size:1.5rem;
-  line-height:2rem;
-  color:#333;
-	max-width: 612px;
-}
-
-ul.notice-red-line {
-	padding: 18px;
-  margin: 36px 0px;
-	background: #fffab3;
-  border-left: 3px solid #CC0104;
   font-size:1.5rem;
   line-height:2rem;
   color:#333;
@@ -185,4 +219,29 @@ table.gpOpeningTimes th {
 
 table.gpOpeningTimes tr {
     border-bottom: solid 1px #bfc1c3;
+}
+
+.important {
+    display: block;
+    font-weight: 600;
+    background: url(/public/images/icon-important-2x.png) 0px 0px / 25px 25px no-repeat;
+    margin-left: 0px;
+    padding: 0px 0px 0px 40px;
+}
+
+a.another-gp{
+  &:after {
+    content: '';
+    position: relative;
+    display: inline-block;
+    border: 6px solid transparent;
+    left: 6px;
+    border-right-color: $white;
+
+    -webkit-transform: rotate(180deg);     /* Chrome and other webkit browsers */
+    -moz-transform: rotate(180deg);        /* FF */
+    -o-transform: rotate(180deg);          /* Opera */
+    -ms-transform: rotate(180deg);         /* IE9 */
+    transform: rotate(180deg);
+  }
 }

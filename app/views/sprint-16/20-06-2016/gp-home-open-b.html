@@ -1,0 +1,162 @@
+{% extends 'templates/nhs_transaction_layout.html' %}
+
+{% block content %}
+
+{% block afterHeader %}
+  {% include "includes/service-headers/gp-overview.html" %}
+{% endblock %}
+
+<main id="content" role="main">
+
+    <a href="" class="back-to-previous">Back</a>
+
+    <div class="grid-row">
+        <div class="column">
+
+    <div class="alert-blue" role="note" aria-label="Information">
+      <p class="important">Surgery currently not accepting new patients<br />
+        <a class="another-gp" href="http://nhsalpha.herokuapp.com/register-with-a-gp/find-a-gp">Find other GP Practices in the area</a>
+</p>
+    </div>
+
+
+    <h1 class="heading-xlarge">Windy Lane Practice</h1>
+
+
+    </div>
+    </div>
+
+
+    <div class="grid-row">
+      <div class="column-two-thirds">
+        <h2 class="heading-medium">101 Windy Lane, Ambridge, West Yorkshire, LS35 0XY</h2>
+
+          <ul class="list-bullet">
+              <li><a class="link" href="https://www.google.co.uk/maps/place/Devonshire+Ave,+Leeds,+West+Yorkshire+LS8+1AY/@53.8433464,-1.5154174,17z/data=!3m1!4b1!4m2!3m1!1s0x48795ba4c4865f53:0x88630d5f1ae46082" target="_blank">View on a map and get directions</a> (opens another window)</li>
+              <li><a href="http://www.streetlanepractice.com/" target="_blank">Read more on the Practice website</a></li>
+          </ul>
+
+        </p>
+    </div>
+  </div>
+
+<div class="grid-row">
+    <div class="column-two-thirds">
+        <div class="notice-green" role="note" aria-label="Information">
+            <h2 class="heading-medium">Reception is open now</h2>
+            <h3 class="heading-small"><a href="http://nhsalpha.herokuapp.com/book-an-appointment/next-available-appointment">Book an appointment online</a> or call reception on <a href="">0113 789456</a></h3>
+        </div>
+    </div>
+  </div>
+
+  <div class="grid-row">
+      <div class="column-two-thirds">
+        <ul class="list-bullet">
+            <li>Reception is closed today between 12pm and 1pm</li>
+            <li>Reception closes this evening at 6pm</li>
+            <li>Enquire about test results from 10am to 12pm</li>
+        </ul>
+
+
+    <details role="group">
+        <summary class="more-info" role="button" aria-controls="details-content-3" tabindex="0" aria-expanded="false">
+            <span>View all appointment times</span>
+        </summary>
+        <div id="details-content-3" aria-hidden="true">
+
+
+            <h3 class="heading-medium">Appointment open times</h2>
+
+
+            <table class="gpOpeningTimes">
+                <tbody>
+                    <tr>
+                        <td class="left60">Monday</td>
+                        <td class="right">8am to 6pm</td>
+                    </tr>
+                    <tr>
+                        <td class="left60">Tuesday</td>
+                        <td class="right40">8am to 8.30pm</td>
+                    </tr>
+                    <tr>
+                        <td class="left60">Wednesday</td>
+                        <td class="right">8am to 6pm</td>
+                    </tr>
+                    <tr>
+                        <td class="left60">Thursday</td>
+                        <td class="right">8am to 6pm</td>
+                    </tr>
+                    <tr>
+                        <td class="left60">Friday</td>
+                        <td class="right">8am to 5pm</td>
+                    </tr>
+                    <tr>
+                        <td class="left60">Saturday</td>
+                        <td class="right40">Closed</td>
+                    </tr>
+                    <tr>
+                        <td class="left60">Sunday</td>
+                        <td class="right40">Closed</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p></p>
+
+            <h3 class="heading-medium">Upcoming days this practice will also be closed</h2>
+
+            <table class="gpOpeningTimes">
+                <!--  <thead>
+    <tr>
+      <th colspan=2>Days this practice will also be closed</th>
+    </tr>
+  </thead>-->
+                <tbody>
+                    <tr>
+                        <td class="left60">Monday 20 June 2016</td>
+                        <td class="right">Training day</td>
+                    </tr>
+                    <tr>
+                        <td class="left60">Monday 11 July 2016</td>
+                        <td class="right">Training day</td>
+                    </tr>
+                    <tr>
+                        <td class="left60">Monday 29 August 2016</td>
+                        <td class="right">Bank holiday</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <summary class="more-info" role="button" aria-controls="details-content-3" tabindex="0" aria-expanded="false">Close</summary>
+        </div>
+
+    </details>
+
+    <p></p>
+
+  </div>
+</div>
+
+<div class="grid-row">
+    <div class="column-two-thirds">
+
+  <h2 class="heading-medium">Services offered</h2>
+  <ul class="list-bullet">
+      <li>doctor</li>
+      <li>nurse</li>
+      <li>diabetes clinic</li>
+  </ul>
+  <p><a href="http://nhsalpha.herokuapp.com/book-an-appointment/next-available-appointment" class="button">Book online</a><br />
+      <a href="http://nhsalpha.herokuapp.com/change-or-cancel-an-appointment/start">Change or cancel an existing appointment</a></p>
+
+    </div>
+
+</div>
+
+
+
+
+</main>
+
+{% endblock %}
