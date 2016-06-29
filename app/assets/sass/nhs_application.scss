@@ -78,6 +78,17 @@
 //
 
 
+.notice-trans {
+  padding: 18px;
+  margin: 0 0 18px 0;
+	background: none;
+  border: 14px solid $nhs-light-blue;
+  color: $black;
+  font-size:18px;
+  line-height:2rem;
+}
+
+
 .notice-green {
   padding: 18px;
   margin: 0 0 18px 0;
@@ -132,6 +143,26 @@
 
 .alert-blue a {
   color: $white;
+  font-weight: 400;
+}
+
+
+.alert-trans {
+  margin: 20px 0;
+  padding: 18px;
+	background: none;
+  color: $black;
+  line-height:2rem;
+}
+
+.alert-trans p {
+  font-size: 20px;
+  margin: 0;
+
+}
+
+.alert-trans a {
+  color: $black;
   font-weight: 400;
 }
 
