@@ -167,6 +167,26 @@
 }
 
 
+.alert-grey {
+  margin: 0 0 18px 0;
+  padding: 18px;
+	background: $fuschia-50;
+  color: $black;
+  line-height:2rem;
+}
+
+.alert-grey p {
+  font-size: 20px;
+  margin: 0;
+
+}
+
+.alert-grey a {
+  color: $black;
+  font-weight: 400;
+}
+
+
 .alert-green {
   margin: 20px 0;
   padding: 18px;
@@ -260,7 +280,15 @@ table.gpOpeningTimes tr {
     padding: 0px 0px 0px 40px;
 }
 
-a.another-gp{
+.alert {
+    display: block;
+    font-weight: 600;
+    background: url(/public/images/icon-important-2x.png) 0px 14px / 25px 25px no-repeat;
+    padding: 0px 0px 0px 40px;
+}
+
+
+a.another-gp-white{
   &:after {
     content: '';
     position: relative;
@@ -276,6 +304,24 @@ a.another-gp{
     transform: rotate(180deg);
   }
 }
+
+a.another-gp-black{
+  &:after {
+    content: '';
+    position: relative;
+    display: inline-block;
+    border: 6px solid transparent;
+    left: 6px;
+    border-right-color: $black;
+
+    -webkit-transform: rotate(180deg);     /* Chrome and other webkit browsers */
+    -moz-transform: rotate(180deg);        /* FF */
+    -o-transform: rotate(180deg);          /* Opera */
+    -ms-transform: rotate(180deg);         /* IE9 */
+    transform: rotate(180deg);
+  }
+}
+
 
 .contact-label {
   margin-top: 16px;
