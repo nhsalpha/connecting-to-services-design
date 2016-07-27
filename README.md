@@ -1,8 +1,11 @@
-# NHS.UK Alpha Prototyping Kit
+## NHS.UK Beta
+# Connecting to services in-browser design work
 
-This kit is adapted from the [GOV.UK prototyping kit.](https://github.com/alphagov/govuk_prototype_kit).
+This repo is for the design work for the nhs.uk beta work looking at connecting to services.
 
-The kit provides a simple way to make interactive prototypes for NHS.UK alpha. These prototypes can be used to show ideas to people you work with, and to do user research.
+## Tech driving this work
+
+This work is created using the nhs.uk prototype kit, itself adapted from the [GOV.UK prototyping kit.](https://github.com/alphagov/govuk_prototype_kit).
 
 It's built on the [Express](http://expressjs.com/) framework and contains code adapted from these GOV.UK resources:
 
