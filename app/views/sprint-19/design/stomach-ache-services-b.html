@@ -1,0 +1,52 @@
+{% extends 'templates/nhs_transaction_layout.html' %}
+
+{% block content %}
+
+{% block afterHeader %}
+  {% include "includes/service-headers/stomach-ache-services.html" %}
+{% endblock %}
+
+<main id="content" role="main">
+
+    <a href="/" class="back-to-previous">Back</a>
+
+    <h1 class="heading-xlarge">Services near to [postcode] for stomach ache</h1>
+
+    <div class="grid-row">
+      <div class="column-two-thirds">
+
+        <h4>This Is A Pharmacy</h4>
+
+        <p>Distance from [postcode]: 0.3 miles<br />
+        Open tomorrow 8am to 6pm</p>
+
+      </div>
+    </div>
+
+    <div class="grid-row">
+      <div class="column-two-thirds">
+
+        <h4>This Is Another Pharmacy</h4>
+
+        <p>Distance from [postcode]: 0.8 miles<br />
+        Open tomorrow 7am to 5pm</p>
+
+      </div>
+    </div>
+
+    <div class="grid-row">
+      <div class="column-two-thirds">
+
+        <h4>Another Pharmacy</h4>
+
+        <p>Distance from [postcode]: 1.5 miles<br />
+        Open tomorrow 9am to 5pm</p>
+
+      </div>
+    </div>
+
+
+
+</main>
+
+{% endblock %}
