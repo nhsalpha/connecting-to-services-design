@@ -1,0 +1,58 @@
+{% extends 'templates/nhs_transaction_layout.html' %}
+
+{% block content %}
+
+{% block afterHeader %}
+  {% include "includes/service-headers/stomach-ache-services.html" %}
+{% endblock %}
+
+<main id="content" role="main">
+
+  {% include "includes/prototype_design/back_javascript.html" %}
+
+  <h1 class="heading-xlarge">[symptom]</h1>
+
+
+  <p class="lede">An overview of these symptoms.</p>
+
+
+  <div class="grid-row">
+
+      <div class="column-two-thirds">
+
+        <h2 class="heading-large">A symptom</h2>
+
+        <p>A description of the symptom.</p>
+
+        <p>It is explicit from the type of symptom that it is nothing serious, but the user may at least still need the assurance of a medical professional.</p>
+
+        <a href="services_search_start_page" class="button button-secondary-cta">If you click this link we will show you somewhere that you can go to and someone you can speak to now or very soon.</a>
+
+        <h2 class="heading-large">Another symptom</h2>
+
+        <p>A description of the symptom.</p>
+
+        <p>Don't worry though. Just give it some time. It wil heal. The body is an amazing fixer.</p>
+
+
+      </div>
+
+      <div class="column-third">
+
+      <h2 class="heading-large">Call 999 if...</h2>
+
+        <ul class="list-bullet">
+          <li>You see this</li>
+          <li>This happens</li>
+          <li>Or this happens</li>
+        </ul>
+
+      </h2>
+
+    </div>
+
+</div>
+
+</main>
+
+{% endblock %}

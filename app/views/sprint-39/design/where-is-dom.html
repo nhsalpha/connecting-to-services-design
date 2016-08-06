@@ -1,0 +1,30 @@
+{% extends 'templates/nhs_transaction_layout.html' %}
+
+{% block content %}
+
+{% block afterHeader %}
+  {% include "includes/service-headers/stomach-ache-services.html" %}
+{% endblock %}
+
+<main id="content" role="main">
+
+    <h1 class="heading-xlarge">Where is Dom?</h1>
+
+<!-- This following block could be alert-orange, maybe -->
+
+    <div class="grid-row">
+      <div class="column-two-thirds">
+
+        <div class="alert-green"><h2 class="heading-large">In the office</h2></div>
+
+        <div class="alert-green">At his desk</div>
+
+
+      </div>
+
+    </div>
+
+
+</main>
+
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'templates/nhs_transaction_layout.html' %}
+
+{% block content %}
+
+{% block afterHeader %}
+  {% include "includes/service-headers/stomach-ache-services.html" %}
+{% endblock %}
+
+<main id="content" role="main">
+
+  {% include "includes/prototype_design/back_javascript.html" %}
+
+    <h1 class="heading-xlarge">Please call 111</h1>
+
+
+    <div class="grid-row">
+      <div class="column-two-thirds">
+
+        <p class="lede">You have told us you are looking for help for {this specific symptom} but cannot leave your location.</p>
+
+      </div>
+
+    </div>
+
+
+</main>
+
+{% endblock %}
