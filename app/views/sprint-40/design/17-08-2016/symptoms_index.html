@@ -1,0 +1,34 @@
+{% extends 'templates/nhs_transaction_layout.html' %}
+
+{% block content %}
+
+{% block afterHeader %}
+  {% include "includes/service-headers/stomach-ache-services.html" %}
+{% endblock %}
+
+<main id="content" role="main">
+
+  <h1 class="heading-xlarge">Look for a symptom or condition</h1>
+
+  <div class="grid-row">
+
+      <div class="column-two-thirds">
+
+          <ul class="list-bullet">
+    <li><a href="symptoms_stomach_ache">Stomach ache</a></li>
+<li><a href="http://v1.syndication.nhschoices.nhs.uk/conditions/articles/transient-ischaemic-attack?apikey=bbccdd">
+    Stroke, mini</a> </li>
+
+<li><a href="http://v1.syndication.nhschoices.nhs.uk/conditions/articles/stroke?apikey=bbccdd">
+    Stroke</a> </li>
+          </ul>
+
+          <p>List of conditions taken from the <a href="http://v1.syndication.nhschoices.nhs.uk/conditions/atoz/?apikey=bbccdd">NHS Choices syndication feed</a>.</p>
+
+        </div>
+
+  </div>
+
+</main>
+
+{% endblock %}
