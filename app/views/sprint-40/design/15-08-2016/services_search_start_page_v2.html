@@ -1,0 +1,55 @@
+{% extends 'templates/nhs_transaction_layout.html' %}
+
+{% block content %}
+
+{% block afterHeader %}
+  {% include "includes/service-headers/stomach-ache-services.html" %}
+{% endblock %}
+
+<main id="content" role="main">
+
+  {% include "includes/prototype_design/back_javascript.html" %}
+
+    <!--<h1 class="heading-xlarge">Headline</h1>-->
+
+
+    <div class="grid-row">
+      <div class="column-two-thirds">
+
+        <h1 class="heading-xlarge">Find a place that will help</h1>
+
+
+        <form method="get" class="form" action="services_search_mobility">
+
+          <p class="lede">We will direct you to somewhere and someone who can help you with:</p>
+
+          <ul class="list-bullet">
+            <li>feeling bloated (trapped wind)</li>
+            <li>indigestion (burning pain or discomfort after eating)</li>
+            <li>constipation (can’t poo)</li>
+          </ul>
+
+
+        <div class="form-item-wrapper">
+          <div class="form-group">
+
+
+            <input type="submit" class="button" value="Continue">
+
+          </div>
+        </div>
+
+          <p></p>
+          <p>If you are not looking for help, you can <a href="symptoms_page">go back to the symptoms page</a>.</p>
+
+
+    </form>
+
+      </div>
+
+    </div>
+
+
+</main>
+
+{% endblock %}

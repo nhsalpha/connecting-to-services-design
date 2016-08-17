@@ -355,6 +355,54 @@ a.another-gp-black{
   font-weight: 400;
 }
 
+.seegp {
+  border-style: solid;
+  border-width: 14px;
+  border-color: $nhs-light-blue;
+  background: white;
+  color: $black;
+  padding: 28px;
+}
+
+.gotoservice {
+  border-style: solid;
+  border-width: 14px;
+  border-color: $nhs-light-green;
+  background: $white;
+  color: $black;
+  padding: 28px;
+  margin-bottom: 18px;
+}
+
+// Tertiary go to service CTA buttons (NHS light green)
+.button-gotoservice-cta {
+  background-color: $nhs-light-green;
+  border-color: $nhs-light-green;
+  border-width: 2px;
+  color: $white;
+
+  // height: 3rem;
+  line-height: 2rem;
+
+  // font-size: 16px;
+  font-weight: bold;
+
+  padding-right: 2.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-image: url("/public/images/icon-button-start.svg");
+  background-repeat: no-repeat;
+  background-position: 98.5% 57.5%;
+
+  &:link,
+  &:hover,
+  &:focus,
+  &:visited{
+    color: $white;
+    background-color: $nhs-light-green;
+  }
+}
+
 .nineninenine {
   background: $nhs-red;
   color: $white;
