@@ -10,9 +10,9 @@
   padding: 0 1rem;
   border: 0;
   color: $white;
-  background-color: $nhs-dark-green;
+  background-color: $nhs-light-green;
   cursor: pointer;
-  border: 3px solid $nhs-websafe-dark-green;
+  border: 3px solid $nhs-light-green;
 
   @include border-radius(0);
   -webkit-appearance: none;
