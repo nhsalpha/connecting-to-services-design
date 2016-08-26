@@ -1,0 +1,28 @@
+{% extends 'templates/nhs_transaction_layout.html' %}
+
+{% block content %}
+
+{% block afterHeader %}
+  {% include "includes/service-headers/stomach-ache-services.html" %}
+{% endblock %}
+
+<main id="content" role="main">
+
+  <h1 class="heading-xlarge">Look for a symptom or condition</h1>
+
+  <div class="grid-row">
+
+      <div class="column-two-thirds">
+
+          <ul class="list-bullet">
+            <li><a href="symptoms_headache">Headache</a></li>
+            <li><a href="symptoms_stomach_ache">Stomach ache</a></li>
+          </ul>
+
+        </div>
+
+  </div>
+
+</main>
+
+{% endblock %}

@@ -1,0 +1,84 @@
+{% extends 'templates/nhs_transaction_layout.html' %}
+
+{% block content %}
+
+{% block afterHeader %}
+  {% include "includes/service-headers/stomach-ache-services.html" %}
+{% endblock %}
+
+<main id="content" role="main">
+
+  {% include "includes/prototype_design/back_javascript.html" %}
+
+    <h1 class="heading-xlarge">Are you able to leave where you are to get somewhere?</h1>
+
+
+    <div class="grid-row">
+      <div class="column-two-thirds">
+
+
+        <form class="form" id="formname">
+
+
+<div class="form-item-wrapper">
+ <fieldset>
+   <legend class="form-label-bold"><!-- legened --></legend>
+
+   <p class="form-label">
+     <!-- label -->
+   </p>
+
+
+   <div class="form-groups">
+     <div class="form-group">
+       <input type="radio" id="no_unwell" name="able" onclick="document.getElementById('formname').action='no_unwell';document.getElementById('submit')">
+       <label for="no_unwell" class="form-control-radio">
+        No, I feel too unwell to leave where I am
+      </label>
+     </div>
+
+     <div class="form-group">
+       <input type="radio" id="no_carer" name="able" onclick="document.getElementById('formname').action='no_carer';document.getElementById('submit')">
+       <label for="no_carer" class="form-control-radio">
+        No, the person who is ill is someone else I care for so I cannot leave where I am
+      </label>
+     </div>
+
+     <div class="form-group">
+       <input type="radio" id="no_impairment" name="able" onclick="document.getElementById('formname').action='no_impairment';document.getElementById('submit')">
+       <label for="no_impairment" class="form-control-radio">
+        No, due to a physical disability I am unable to leave where I am
+      </label>
+     </div>
+
+     <div class="form-group">
+       <input type="radio" id="yes_how_travel" name="able" onclick="document.getElementById('formname').action='yes_how_travel';document.getElementById('submit')">
+       <label for="yes_how_travel" class="form-control-radio">
+        Yes, I feel OK to leave where I am
+      </label>
+     </div>
+
+   </div>
+
+
+<div class="form-item-wrapper">
+  <div class="form-group">
+
+
+    <input type="submit" class="button" value="Continue">
+
+  </div>
+</div>
+
+
+  </form>
+
+      </div>
+
+    </div>
+
+</div>
+
+</main>
+
+{% endblock %}

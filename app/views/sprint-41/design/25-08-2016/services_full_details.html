@@ -1,0 +1,35 @@
+{% extends 'templates/nhs_transaction_layout.html' %}
+
+{% block content %}
+
+{% block afterHeader %}
+  {% include "includes/service-headers/stomach-ache-services.html" %}
+{% endblock %}
+
+<main id="content" role="main">
+
+  {% include "includes/prototype_design/back_javascript.html" %}
+
+    <h1 class="heading-xlarge">Pharmacy name</h1>
+
+
+    <div class="grid-row">
+      <div class="column-two-thirds">
+
+        <h1>Pharmacy name</h1>
+
+
+        <p>Pharmacists are highly trained health professionals. They are experts in medicines and will use their clinical expertise, together with their practical knowledge to advise you on common problems such as coughs, colds, aches and pains, as well as healthy eating and stopping smoking.</p>
+
+        <p class="alert-blue"><a href="http://www.nhs.uk/NHSEngland/AboutNHSservices/pharmacists/Pages/pharmacistsandchemists.aspx">About pharmacies</a></p>
+
+      </div>
+
+      </div>
+
+    </div>
+
+
+</main>
+
+{% endblock %}

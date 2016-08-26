@@ -10,21 +10,23 @@
 
   {% include "includes/prototype_design/back_javascript.html" %}
 
-
-  <h1 class="heading-xlarge">Enter an address or postcode</h1>
-
+    <h1 class="heading-xlarge">Look for services to help you with [condition/sympton]</h1>
 
 <!-- This following block could be alert-orange, maybe -->
 
     <div class="grid-row">
       <div class="column-two-thirds">
 
+        <p class="lede">You've told us you could be using public transport. We'll bear that in mind when looking for help.</p>
+
+
         <form method="get" class="form" action="services_results">
+
 
 <div class="form-item-wrapper">
   <div class="form-group">
     <label class="form-label-bold" for="postcode">
-      <!-- label -->
+      Enter the address or postcode of where you are.
     </label>
 
     <input type="text" id="postcode" name="postcode" value="" class="form-control">
@@ -35,10 +37,10 @@
 
 <div class="form-item-wrapper">
  <fieldset>
-   <legend class="form-label-bold">Are there specific access needs?</legend>
+   <legend class="form-label-bold">Do you have specific access needs?</legend>
 
    <p class="form-label">
-     <!-- nothing -->
+     This will help us show you services you can get to.
    </p>
 
    <div class="inline-form-groups">
@@ -89,16 +91,6 @@
 
    <div class="form-item-wrapper">
      <div class="form-group">
-       <input type="checkbox" id="checkbox-minor-10" name="minor-10">
-       <label class="form-control-checkbox minor" for="checkbox-minor-10">
-         * Gender specific
-       </label>
-     </div>
-   </div>
-
-
-   <div class="form-item-wrapper">
-     <div class="form-group">
        <input type="checkbox" id="checkbox-minor-4" name="minor-4">
        <label class="form-control-checkbox minor" for="checkbox-minor-4">
          Induction loop
@@ -126,15 +118,6 @@
 
    <div class="form-item-wrapper">
      <div class="form-group">
-       <input type="checkbox" id="checkbox-minor-7" name="minor-7">
-       <label class="form-control-checkbox minor" for="checkbox-minor-7">
-         Wheelchair access
-       </label>
-     </div>
-   </div>
-
-   <div class="form-item-wrapper">
-     <div class="form-group">
        <input type="checkbox" id="checkbox-minor-8" name="minor-8">
        <label class="form-control-checkbox minor" for="checkbox-minor-8">
          Step free access
@@ -142,14 +125,16 @@
      </div>
    </div>
 
+
    <div class="form-item-wrapper">
      <div class="form-group">
-       <input type="checkbox" id="checkbox-minor-9" name="minor-9">
-       <label class="form-control-checkbox minor" for="checkbox-minor-9">
-         * Translation
+       <input type="checkbox" id="checkbox-minor-7" name="minor-7">
+       <label class="form-control-checkbox minor" for="checkbox-minor-7">
+         Wheelchair access
        </label>
      </div>
    </div>
+
 
 
  </fieldset>
@@ -158,8 +143,8 @@
 <div class="form-item-wrapper">
   <div class="form-group">
 
-      <input type="submit" class="button" value="Continue">
 
+    <input type="submit" class="button" value="Continue">
 
   </div>
 </div>

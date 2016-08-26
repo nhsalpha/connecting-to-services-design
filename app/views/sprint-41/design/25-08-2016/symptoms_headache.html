@@ -1,0 +1,82 @@
+{% extends 'templates/nhs_transaction_layout.html' %}
+
+{% block content %}
+
+{% block afterHeader %}
+  {% include "includes/service-headers/stomach-ache-services.html" %}
+{% endblock %}
+
+<main id="content" role="main">
+
+  {% include "includes/prototype_design/back_javascript.html" %}
+
+  <h1 class="heading-xlarge">Headache</h1>
+
+  <div class="grid-row">
+
+  <div class="column-two-thirds">
+
+  <p class="lede">Intro.</p>
+
+  <p>Content.</p>
+
+</div>
+</div>
+
+  <div class="grid-row">
+
+      <div class="column-two-thirds">
+
+        <h2 class="heading-large">Treating stomach ache at home</h2>
+
+
+          <p>Stuff.</P>
+
+            <ul class="list-bullet">
+              <li>list 1</li>
+              <li>list 2</li>
+            </ul>
+
+          <p>
+            <a href="services_search_start_page_v2" class="gotoservice-cta">Find an open [thing]</a>
+          </p>
+
+          <p></p>
+
+          <h2 class="heading-large">If the symptoms persist or get worse</h2>
+
+          <p>Seek a doctor's advice if:</p>
+
+        <ul class="list-bullet">
+          <li>pain++ 1</li>
+          <li>pain++ 2</li>
+        </ul>
+
+        <p>
+          <strong>Visit a GP</strong> or <a href="111" class="gotoservice-cta">use NHS 111</a>
+        </p>
+        <p></p>
+
+
+      </div>
+
+      <div class="column-third nineninenine">
+
+      <h2 class="heading-large">Call 999 or go to A&E if you</h2>
+
+        <ul class="list-bullet">
+          <li>pain+++++ 1</li>
+          <li>pain+++++ 2</li>
+          <li>pain+++++ 3</li>
+          <li>pain+++++ 4</li>
+        </ul>
+
+        <p></p>
+
+    </div>
+
+</div>
+
+</main>
+
+{% endblock %}
