@@ -420,3 +420,16 @@ a.another-gp-black{
   background: $nhs-red;
   color: $white;
 }
+
+.conditionContainer {
+  width: 45%;
+  float: left;
+  margin: 0px 10px 10px 0;
+  padding: 10px;
+  background-color: rgba(0, 114, 198, 0.1);
+}
+
+
+.conditionImage {
+  width: 100%;
+}
