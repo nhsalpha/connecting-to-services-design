@@ -1,0 +1,78 @@
+{% extends 'templates/nhs_transaction_layout.html' %}
+
+{% block content %}
+
+{% block afterHeader %}
+  {% include "includes/service-headers/stomach-ache-services.html" %}
+{% endblock %}
+
+<main id="content" role="main">
+
+  {% include "includes/prototype_design/back_javascript.html" %}
+
+    <h1 class="heading-xlarge">How do could you travel to get help?</h1>
+
+
+    <div class="grid-row">
+      <div class="column-two-thirds">
+
+
+        <form class="form" id="formname">
+
+
+<div class="form-item-wrapper">
+ <fieldset>
+   <legend class="form-label-bold"><!-- legened --></legend>
+
+   <p class="form-label">
+     <!-- label -->
+   </p>
+
+
+   <div class="form-groups">
+     <div class="form-group">
+       <input type="checkbox" id="yes_walking" name="able" onclick="document.getElementById('formname').action='yes_walking';document.getElementById('submit')">
+       <label for="yes_walking" class="form-control-checkbox">
+        By walking
+      </label>
+     </div>
+
+     <div class="form-group">
+       <input type="checkbox" id="yes_public_transport" name="able" onclick="document.getElementById('formname').action='yes_public_transport';document.getElementById('submit')">
+       <label for="yes_public_transport" class="form-control-checkbox">
+        By public transport
+      </label>
+     </div>
+
+
+     <div class="form-group">
+       <input type="checkbox" id="yes_driving" name="able" onclick="document.getElementById('formname').action='yes_driving';document.getElementById('submit')">
+       <label for="yes_driving" class="form-control-checkbox">
+        By driving
+      </label>
+     </div>
+
+   </div>
+
+
+<div class="form-item-wrapper">
+  <div class="form-group">
+
+
+    <input type="submit" class="button" value="Continue">
+
+  </div>
+</div>
+
+
+  </form>
+
+      </div>
+
+    </div>
+
+</div>
+
+</main>
+
+{% endblock %}

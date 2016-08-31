@@ -1,0 +1,152 @@
+{% extends 'templates/nhs_transaction_layout.html' %}
+
+{% block content %}
+
+{% block afterHeader %}
+  {% include "includes/service-headers/stomach-ache-services.html" %}
+{% endblock %}
+
+<main id="content" role="main">
+
+  {% include "includes/prototype_design/back_javascript.html" %}
+
+    <h1 class="heading-xlarge">Places near to {postcode}</h1>
+
+    <div class="grid-row">
+      <div class="column-two-thirds">
+    <p class="lede">Listed below are all the places nearby that could help you, showing if they are open or closed.</p>
+    <p></p>
+
+  </div>
+</div>
+
+
+        <table>
+
+          <tr>
+            <td colspan=2><span style="font-size: 18px; font-weight: 400;">Pharmacy</span></td>
+          </tr>
+
+          <tr>
+            <td width="50%"><span style="font-size: 24px; font-weight: 800;"><a href="services_full_details">MJ Moonwalker</a></span>
+              <p>7 Windy Lane, Idle, Bradford, BD10 9RY<br />
+                                Telephone 01234 1234567</p>
+
+              <p><strong>Open today until 5pm</strong><br />
+              Closes in an hour.</p>
+<!--
+              <p>Services offered:
+                <ul class="list-bullet">
+                  <li>Telephone appointments</li>
+                  <li>Consultation by booking an appointment in advance</li>
+                  <li>Turn up consultation</li>
+                </ul>
+              </p>
+-->
+
+            </td>
+            <td width="50%">Distance: 0.3 miles<br /><a href="https://www.google.com/maps/dir/42+Harper+Crescent,+Bradford+BD10+9RY,+UK/53.8335,-1.7295/@53.8361656,-1.7319263,16z/" class="button button-secondary-cta">See on map and get directions</a><br />
+              <p><strong>Estimated journey time</strong><br />
+                  By car: <a href="">3 minutes</a><br />
+                  On foot: <a href="">10 minutes</a></p></td>
+          </tr>
+          <tr>
+            <td>
+</td>
+          </tr>
+
+
+          <tr>
+            <td colspan=2><hr></td>
+          </tr>
+
+          <tr>
+            <td colspan=2><span style="font-size: 18px; font-weight: 400;">Pharmacy</span></td>
+          </tr>
+
+          <tr>
+            <td width="50%"><span style="font-size: 24px; font-weight: 800;"><a href="services_full_details">Sunrise Pharmacy</a></span>
+              <p>19 Windy Lane, Idle, Bradford, BD10 9RY<br />
+                                Telephone 01234 23456712</p>
+
+              <p><strong>Closed now.<br />
+              Opens next 9am tomorrow.</strong></p>
+<!--
+              <p>Services offered:
+                <ul class="list-bullet">
+                  <li>Telephone appointments</li>
+                  <li>Consultation by booking an appointment in advance</li>
+                  <li>Turn up consultation</li>
+                </ul>
+              </p>
+-->
+
+            </td>
+            <td width="50%">Distance: 0.5 miles<br /><a href="https://www.google.com/maps/dir/42+Harper+Crescent,+Bradford+BD10+9RY,+UK/53.8335,-1.7295/@53.8361656,-1.7319263,16z/" class="button button-secondary-cta">See on map and get directions</a><br />
+              <p><strong>Estimated journey time</strong><br />
+                  By car: <a href="">3 minutes</a><br />
+                  On foot: <a href="">12 minutes</a></p></td>
+          </tr>
+          <tr>
+            <td>
+</td>
+          </tr>
+
+
+          <tr>
+            <td colspan=2><hr></td>
+          </tr>
+
+          <tr>
+            <td colspan=2><span style="font-size: 18px; font-weight: 400;">Pharmacy</span></td>
+          </tr>
+
+          <tr>
+            <td width="50%"><span style="font-size: 24px; font-weight: 800;"><a href="services_full_details">MJ Moonwalker</a></span>
+              <p>7 Windy Lane, Idle, Bradford, BD10 9RY<br />
+                                Telephone 01234 1234567</p>
+
+              <p><strong>Open today until 5.30pm</strong></p>
+<!--
+              <p>Services offered:
+                <ul class="list-bullet">
+                  <li>Telephone appointments</li>
+                  <li>Consultation by booking an appointment in advance</li>
+                  <li>Turn up consultation</li>
+                </ul>
+              </p>
+-->
+
+            </td>
+            <td width="50%">Distance: 0.3 miles<br /><a href="https://www.google.com/maps/dir/42+Harper+Crescent,+Bradford+BD10+9RY,+UK/53.8335,-1.7295/@53.8361656,-1.7319263,16z/" class="button button-secondary-cta">See on map and get directions</a><br />
+              <p><strong>Estimated journey time</strong><br />
+                  By car: <a href="">3 minutes</a><br />
+                  On foot: <a href="">10 minutes</a></p></td>
+          </tr>
+          <tr>
+            <td>
+</td>
+          </tr>
+
+
+          <tr>
+            <td colspan=2><hr></td>
+          </tr>
+
+
+        </table>
+
+
+        <p></p>
+        <div class="grid-row">
+          <div class="column-two-thirds">
+        <p><a href="services_results"  class="gotoservice-cta">See only open places nearby</a></p>
+        </div>
+        </div>
+
+
+
+
+</main>
+
+{% endblock %}
